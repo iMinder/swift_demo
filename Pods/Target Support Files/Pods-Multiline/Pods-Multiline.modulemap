@@ -1,0 +1,6 @@
+framework module Pods_Multiline {
+  umbrella header "Pods-Multiline-umbrella.h"
+
+  export *
+  module * { export * }
+}
