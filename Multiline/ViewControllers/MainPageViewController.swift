@@ -13,7 +13,6 @@ class MainPageViewController: UIViewController {
 
     let collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-        collectionView.backgroundColor = .white
         return collectionView
     }()
 
@@ -25,25 +24,36 @@ class MainPageViewController: UIViewController {
         adapter.dataSource = self
         return adapter
     }()
+
+    let demos: [DemoModel] = [
+        DemoModel(name: "Use boundingRectWithSize With Cache", controllerClass: BoundSizeViewController.self),
+        DemoModel(name: "Constraint Caculate", controllerClass: ConstraintViewController.self),
+        DemoModel(name: "String Caculate", controllerClass: StringCaculateViewController.self)
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupUI()
+    }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        collectionView.frame = view.bounds
     }
 
     private func setupUI() {
         view.backgroundColor = .white
-
+        view.addSubview(collectionView)
+        _ = adapter
     }
 }
 
 extension MainPageViewController: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        <#code#>
+        return demos as [ListDiffable]
     }
 
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-        <#code#>
+        return DemoSectionController()
     }
 
     func emptyView(for listAdapter: ListAdapter) -> UIView? {

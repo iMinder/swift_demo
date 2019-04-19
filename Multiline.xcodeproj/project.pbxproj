@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5350F93E226970AD00A66561 /* DemosSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350F93D226970AD00A66561 /* DemosSectionController.swift */; };
+		5350F9412269795F00A66561 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350F9402269795F00A66561 /* LabelCell.swift */; };
+		5350F9432269830200A66561 /* BoundSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350F9422269830200A66561 /* BoundSizeViewController.swift */; };
+		5350F9452269833A00A66561 /* ConstraintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350F9442269833A00A66561 /* ConstraintViewController.swift */; };
+		5350F9472269836900A66561 /* StringCaculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350F9462269836900A66561 /* StringCaculateViewController.swift */; };
 		539B069C2267183300801507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539B069B2267183300801507 /* AppDelegate.swift */; };
 		539B069E2267183300801507 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539B069D2267183300801507 /* MainPageViewController.swift */; };
 		539B06A32267183500801507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539B06A22267183500801507 /* Assets.xcassets */; };
@@ -39,6 +44,11 @@
 		01B9CC532D67B57A158692FB /* Pods_MultilineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultilineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		059D1F8E50E72ECFA62AECD9 /* Pods_MultilineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultilineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B75A4E0334D8CB81CFAD79 /* Pods-Multiline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Multiline.release.xcconfig"; path = "Target Support Files/Pods-Multiline/Pods-Multiline.release.xcconfig"; sourceTree = "<group>"; };
+		5350F93D226970AD00A66561 /* DemosSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemosSectionController.swift; sourceTree = "<group>"; };
+		5350F9402269795F00A66561 /* LabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
+		5350F9422269830200A66561 /* BoundSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundSizeViewController.swift; sourceTree = "<group>"; };
+		5350F9442269833A00A66561 /* ConstraintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintViewController.swift; sourceTree = "<group>"; };
+		5350F9462269836900A66561 /* StringCaculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCaculateViewController.swift; sourceTree = "<group>"; };
 		539B06982267183300801507 /* Multiline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		539B069B2267183300801507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		539B069D2267183300801507 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +120,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5350F93F2269795400A66561 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5350F9402269795F00A66561 /* LabelCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		539B068F2267183300801507 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +153,7 @@
 		539B069A2267183300801507 /* Multiline */ = {
 			isa = PBXGroup;
 			children = (
+				5350F93F2269795400A66561 /* Views */,
 				539B06CB22672A0000801507 /* ViewControllers */,
 				539B06CA226729D900801507 /* Model */,
 				539B06C92267299600801507 /* SectionControllers */,
@@ -167,6 +186,7 @@
 		539B06C92267299600801507 /* SectionControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5350F93D226970AD00A66561 /* DemosSectionController.swift */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -182,6 +202,9 @@
 			isa = PBXGroup;
 			children = (
 				539B069D2267183300801507 /* MainPageViewController.swift */,
+				5350F9422269830200A66561 /* BoundSizeViewController.swift */,
+				5350F9442269833A00A66561 /* ConstraintViewController.swift */,
+				5350F9462269836900A66561 /* StringCaculateViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -411,7 +434,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5350F9472269836900A66561 /* StringCaculateViewController.swift in Sources */,
+				5350F93E226970AD00A66561 /* DemosSectionController.swift in Sources */,
+				5350F9432269830200A66561 /* BoundSizeViewController.swift in Sources */,
 				539B069E2267183300801507 /* MainPageViewController.swift in Sources */,
+				5350F9452269833A00A66561 /* ConstraintViewController.swift in Sources */,
+				5350F9412269795F00A66561 /* LabelCell.swift in Sources */,
 				539B069C2267183300801507 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
